@@ -111,9 +111,9 @@ class BuildUtils {
         project.tasks.generatePomFileForMavenPublication.enabled = false
         project.tasks.publish.enabled = false
         project.tasks.publishToMavenLocal.enabled = false
-        project.tasks.publishMavenPublicationToMavenRepository.enabled = false
+        //project.tasks.publishMavenPublicationToMavenRepository.enabled = false
         project.tasks.publishMavenPublicationToMavenLocal.enabled = false
-        project.tasks.publishAllPublicationsToMavenRepository.enabled = false
+        //project.tasks.publishAllPublicationsToMavenRepository.enabled = false
     }
 
 

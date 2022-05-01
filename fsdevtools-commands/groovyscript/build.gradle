@@ -20,20 +20,9 @@
  *
  */
 
-rootProject.name = 'fs-cli'
-include 'fsdevtools-cli'
-include 'fsdevtools-cli-api'
-include 'fsdevtools-common'
-include 'fsdevtools-sharedutils'
-include 'fsdevtools-serverrunner'
-include 'fsdevtools-commands'
-include 'fsdevtools-docs'
-include 'fsdevtools-docs-generator'
-include 'fsdevtools-commands:module'
-include 'fsdevtools-commands:project'
-include 'fsdevtools-commands:schedule'
-include 'fsdevtools-commands:server'
-include 'fsdevtools-commands:service'
-include 'fsdevtools-commands:test'
-include 'fsdevtools-commands:groovyscript'
-include 'fsdevtools-commands:custom-command-example'
+dependencies {
+    implementation project(":fsdevtools-cli-api")
+    implementation project(":fsdevtools-common")
+    implementation "org.apache.logging.log4j:log4j-core:${log4jVersion}"
+    implementation "org.codehaus.groovy:groovy-all:3.0.10"
+}

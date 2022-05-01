@@ -33,4 +33,5 @@ dependencies {
     api project(":fsdevtools-commands:server")
     api project(":fsdevtools-commands:service")
     api project(":fsdevtools-commands:test")
+    api project(":fsdevtools-commands:groovyscript")
 }
