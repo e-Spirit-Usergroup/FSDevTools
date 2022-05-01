@@ -3,7 +3,7 @@
  * *********************************************************************
  * fsdevtools
  * %%
- * Copyright (C) 2020 e-Spirit AG
+ * Copyright (C) 2021 e-Spirit GmbH
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,18 +20,8 @@
  *
  */
 
-rootProject.name = 'fs-cli'
-include 'fsdevtools-cli'
-include 'fsdevtools-cli-api'
-include 'fsdevtools-common'
-include 'fsdevtools-sharedutils'
-include 'fsdevtools-serverrunner'
-include 'fsdevtools-commands'
-include 'fsdevtools-commands:module'
-include 'fsdevtools-commands:project'
-include 'fsdevtools-commands:schedule'
-include 'fsdevtools-commands:server'
-include 'fsdevtools-commands:service'
-include 'fsdevtools-commands:test'
-include 'fsdevtools-commands:custom-command-example'
-include 'fsdevtools-commands:groovyscript'
+dependencies {
+    compile project(":fsdevtools-cli-api")
+    compile project(":fsdevtools-common")
+    compile "org.codehaus.groovy:groovy-all:3.0.10"
+}

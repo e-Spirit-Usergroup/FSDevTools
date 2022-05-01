@@ -111,9 +111,11 @@ class BuildUtils {
         project.tasks.generatePomFileForMavenPublication.enabled = false
         project.tasks.publish.enabled = false
         project.tasks.publishToMavenLocal.enabled = false
-        project.tasks.publishMavenPublicationToMavenRepository.enabled = false
+        // uncommenting next line breaks the build: "Could not get unknown property 'publishMavenPublicationToMavenRepository' for task set of type org.gradle.api.internal.tasks.DefaultTaskContainer."
+        //project.tasks.publishMavenPublicationToMavenRepository.enabled = false
         project.tasks.publishMavenPublicationToMavenLocal.enabled = false
-        project.tasks.publishAllPublicationsToMavenRepository.enabled = false
+        // uncommenting next line breaks the build: "Could not get unknown property 'publishMavenPublicationToMavenRepository' for task set of type org.gradle.api.internal.tasks.DefaultTaskContainer."
+        //project.tasks.publishAllPublicationsToMavenRepository.enabled = false
     }
 
 
